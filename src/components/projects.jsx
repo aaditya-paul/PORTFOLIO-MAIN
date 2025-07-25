@@ -294,7 +294,7 @@ function Projects() {
                             window.open(project.liveUrl, "_blank");
                           }}
                           className="flex items-center gap-1 px-2 py-1 sm:px-3 sm:py-1.5 bg-[#f4bb44] text-black 
-                                   rounded-md text-xs font-fira-code font-semibold hover:bg-[#f4bb44]/90 
+                               cursor-pointer    rounded-md text-xs font-fira-code font-semibold hover:bg-[#f4bb44]/90 
                                    transition-all duration-200 shadow-lg"
                         >
                           <span>🚀</span>
@@ -312,7 +312,7 @@ function Projects() {
                             window.open(project.githubUrl, "_blank");
                           }}
                           className="flex items-center gap-1 px-2 py-1 sm:px-3 sm:py-1.5 bg-black/80 text-white border border-white/30
-                                   rounded-md text-xs font-fira-code hover:bg-black/90 hover:border-white/50
+                                cursor-pointer   rounded-md text-xs font-fira-code hover:bg-black/90 hover:border-white/50
                                    transition-all duration-200 shadow-lg"
                         >
                           <span>📂</span>
@@ -362,7 +362,7 @@ function Projects() {
                         }}
                         className="flex items-center gap-1 px-3 py-2 sm:py-1.5 bg-gray-800/50 border border-gray-600 
                                  rounded-md text-xs font-fira-code text-gray-300 hover:text-white 
-                                 hover:border-gray-400 transition-all duration-200 flex-1 sm:flex-none justify-center
+                              cursor-pointer   hover:border-gray-400 transition-all duration-200 flex-1 sm:flex-none justify-center
                                  min-h-[36px] sm:min-h-auto"
                         title="View on GitHub"
                       >
@@ -380,7 +380,7 @@ function Projects() {
                           window.open(project.liveUrl, "_blank");
                         }}
                         className="flex items-center gap-1 px-3 py-2 sm:py-1.5 bg-[#f4bb44]/10 border border-[#f4bb44]/30 
-                                 rounded-md text-xs font-fira-code text-[#f4bb44] hover:bg-[#f4bb44]/20 
+                               cursor-pointer  rounded-md text-xs font-fira-code text-[#f4bb44] hover:bg-[#f4bb44]/20 
                                  hover:border-[#f4bb44] transition-all duration-200 flex-1 sm:flex-none justify-center
                                  min-h-[36px] sm:min-h-auto"
                         title="View Live Site"
