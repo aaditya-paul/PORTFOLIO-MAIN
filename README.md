@@ -1,36 +1,144 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Aaditya Paul - Portfolio
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js 15, showcasing my work as a Full-Stack Developer.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Modern Design** - Clean, minimalist interface with smooth animations
+- **Responsive Layout** - Optimized for all devices and screen sizes
+- **Performance Optimized** - Built with Next.js 15 and Tailwind CSS 4
+- **Interactive Components** - Engaging user experience with Framer Motion
+- **SEO Friendly** - Optimized metadata and structure
+- **Fast Loading** - Optimized fonts and assets
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 15
+- **Styling:** Tailwind CSS 4
+- **Animations:** Framer Motion
+- **Fonts:** Google Fonts (Geist, Poppins, Roboto, Ubuntu, Fira Code, Playwrite IN)
+- **Development:** ESLint, PostCSS
+
+## 📋 Sections
+
+- **Hero Section** - Introduction and call-to-action
+- **About** - Personal background and skills
+- **Projects** - Portfolio of development work
+- **Contact** - Get in touch information
+- **Footer** - Additional links and information
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have Node.js installed on your machine.
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/aaditya-paul/PORTFOLIO-MAIN.git
+   cd portfolio-main
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+3. **Run the development server**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
+
+4. **Open in browser**
+
+   Navigate to [http://localhost:3000](http://localhost:3000) to view the portfolio.
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── globals.css         # Global styles
+│   ├── layout.js          # Root layout with font configurations
+│   ├── page.js            # Main page component
+│   └── resume/            # Resume page
+├── components/
+│   ├── about.jsx          # About section
+│   ├── contact.jsx        # Contact section
+│   ├── HeroSection.jsx    # Hero/landing section
+│   ├── projects.jsx       # Projects showcase
+│   └── footer.jsx         # Footer component
+└── styles/
+    └── textDrawing.css    # Custom text animations
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Customization
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Fonts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All fonts are configured in `src/app/layout.js` using Next.js font optimization:
 
-## Learn More
+- Geist Sans & Mono (Primary fonts)
+- Poppins, Roboto, Ubuntu (Secondary fonts)
+- Fira Code (Code snippets)
+- Playwrite IN (Special decorative text)
 
-To learn more about Next.js, take a look at the following resources:
+### Styling
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Tailwind CSS 4 for utility-first styling
+- Custom CSS variables defined in globals.css
+- Responsive design with mobile-first approach
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Build & Deploy
 
-## Deploy on Vercel
+### Build for production
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Start production server
+
+```bash
+npm start
+```
+
+### Deploy on Vercel
+
+The easiest way to deploy is using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/aaditya-paul/PORTFOLIO-MAIN)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/aaditya-paul/PORTFOLIO-MAIN/issues).
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📧 Contact
+
+**Aaditya Paul** - Full-Stack Developer
+
+- Portfolio: [Your Portfolio URL]
+- LinkedIn: [Your LinkedIn Profile]
+- Email: [Your Email]
+- GitHub: [@aaditya-paul](https://github.com/aaditya-paul)
+
+---
+
+⭐ Star this repository if you found it helpful!
