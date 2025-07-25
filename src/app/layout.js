@@ -1,4 +1,12 @@
-import {Geist, Geist_Mono} from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Fira_Code,
+  Poppins,
+  Roboto,
+  Ubuntu,
+  Playwrite_IN,
+} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -9,6 +17,43 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+// const playwriteIN = {
+//   variable: "--font-playwrite",
+// };
+
+const playwrite = Playwrite_IN({
+  variable: "--font-playwrite",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400"],
+});
+const firaCode = Fira_Code({
+  variable: "--font-fira-code",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+});
+
+const roboto = Roboto({
+  variable: "--font-roboto",
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+  display: "swap",
+});
+
+const ubuntu = Ubuntu({
+  variable: "--font-ubuntu",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+  display: "swap",
 });
 
 export const metadata = {
@@ -24,13 +69,20 @@ export const metadata = {
       {url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png"},
     ],
   },
+  links: [
+    {
+      href: "https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap",
+      rel: "stylesheet",
+    },
+  ],
 };
 
 export default function RootLayout({children}) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${firaCode.variable} ${poppins.variable} ${roboto.variable} ${ubuntu.variable} antialiased`}
+        style={{"--font-playwrite": "'Playwrite IN', sans-serif"}}
       >
         {children}
       </body>
