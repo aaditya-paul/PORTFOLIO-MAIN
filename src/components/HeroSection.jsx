@@ -160,7 +160,7 @@ function HeroSection() {
               }}
               className="px-4 sm:px-6 py-2 sm:py-3 bg-[#f4bb44] text-black font-fira-code font-semibold rounded-full 
                        hover:bg-[#f4bb44]/90 transition-all duration-200 
-                       hover:shadow-[0_0_15px_rgba(244,187,68,0.3)] text-sm sm:text-base"
+                       hover:shadow-[0_0_15px_rgba(244,187,68,0.3)] text-sm sm:text-base cursor-pointer"
             >
               View My Work 🎯
             </motion.button>
@@ -174,7 +174,7 @@ function HeroSection() {
                   block: "start",
                 });
               }}
-              className="px-4 sm:px-6 py-2 sm:py-3 bg-transparent border border-[#f4bb44] text-[#f4bb44] font-fira-code 
+              className="px-4 sm:px-6 py-2 sm:py-3 bg-transparent border cursor-pointer border-[#f4bb44] text-[#f4bb44] font-fira-code 
                        rounded-full hover:bg-[#f4bb44]/10 transition-all duration-200 text-sm sm:text-base"
             >
               Let&apos;s Connect 🤝
@@ -185,7 +185,7 @@ function HeroSection() {
               onClick={() => {
                 router.push("/resume");
               }}
-              className="px-4 sm:px-6 py-2 sm:py-3 bg-transparent border border-[#f4bb44] text-[#f4bb44] font-fira-code 
+              className="px-4 sm:px-6 py-2 sm:py-3 bg-transparent border cursor-pointer border-[#f4bb44] text-[#f4bb44] font-fira-code 
                        rounded-full hover:bg-[#f4bb44]/10 transition-all duration-200 text-sm sm:text-base"
             >
               View Resume
