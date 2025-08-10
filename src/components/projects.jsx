@@ -10,6 +10,7 @@ import CG from "../../public/preview/cg.jpg";
 import P2P from "../../public/preview/p2p.jpg";
 import FB from "../../public/preview/FB.jpg";
 import BF from "../../public/preview/BF.jpg";
+import AM from "../../public/preview/AM.jpg";
 import Image from "next/image";
 function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -35,6 +36,18 @@ function Projects() {
       featured: true,
     },
     {
+      title: "AceMind",
+      description:
+        "AceMind is an innovative platform designed to enhance cognitive skills through personalized learning experiences and AI-driven insights.",
+      date: "Aug 2025",
+      // githubUrl: "https://github.com/aaditya-paul/meal-buddy",
+      liveUrl: "https://acemind-delta.vercel.app/",
+      img: AM,
+      tech: ["UI/UX", "Syllabus Parser", "AI"],
+      category: "ai",
+      featured: true,
+    },
+    {
       title: "Brandfolio",
       description:
         "Brandfolio is a revolutionary platform that bridges the gap between brands and creators with a data-first approach, empowering smarter partnerships, meaningful content, and measurable growth.",
@@ -44,7 +57,7 @@ function Projects() {
       img: BF,
       tech: ["UI/UX", "Landing Page", "Animations"],
       category: "frontend",
-      featured: true,
+      featured: false,
     },
     {
       title: "Upexperiment",
