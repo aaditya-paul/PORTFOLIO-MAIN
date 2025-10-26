@@ -1,6 +1,6 @@
 "use client";
-import {motion} from "framer-motion";
-import {useState} from "react";
+import { motion } from "framer-motion";
+import { useState } from "react";
 import SU from "../../public/preview/shiksha.jpg";
 import CB from "../../public/preview/clever.jpg";
 import WTT from "../../public/preview/wtt.jpg";
@@ -11,15 +11,17 @@ import P2P from "../../public/preview/p2p.jpg";
 import FB from "../../public/preview/FB.jpg";
 import BF from "../../public/preview/BF.jpg";
 import AM from "../../public/preview/AM.jpg";
+import SPM from "../../public/preview/spm.jpg";
+import TSK from "../../public/preview/tsk.jpg";
 import Image from "next/image";
 function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const categories = [
-    {id: "all", name: "All Projects", icon: "🚀"},
-    {id: "fullstack", name: "Full Stack", icon: "💻"},
-    {id: "frontend", name: "Frontend", icon: "🎨"},
-    {id: "ai", name: "AI/ML", icon: "🤖"},
+    { id: "all", name: "All Projects", icon: "🚀" },
+    { id: "fullstack", name: "Full Stack", icon: "💻" },
+    { id: "frontend", name: "Frontend", icon: "🎨" },
+    { id: "ai", name: "AI/ML", icon: "🤖" },
   ];
 
   const achievements = [
@@ -48,18 +50,6 @@ function Projects() {
       featured: true,
     },
     {
-      title: "Brandfolio",
-      description:
-        "Brandfolio is a revolutionary platform that bridges the gap between brands and creators with a data-first approach, empowering smarter partnerships, meaningful content, and measurable growth.",
-      date: "Jul 2025",
-      githubUrl: "https://github.com/aaditya-paul/brandfolio",
-      liveUrl: "https://brandfolio-orcin.vercel.app/",
-      img: BF,
-      tech: ["UI/UX", "Landing Page", "Animations"],
-      category: "frontend",
-      featured: false,
-    },
-    {
       title: "Upexperiment",
       description:
         "Built a user-friendly blogging platform with seamless device adaptability, ensuring an optimal viewing experience across all screens.",
@@ -71,6 +61,43 @@ function Projects() {
       category: "fullstack",
       featured: true,
     },
+    {
+      title: "Taskle",
+      description:
+        "Taskle is a personal task management application designed to help you organize and prioritize your daily tasks efficiently. It features a handcrafted, warm, and creative UI that feels like a beautifully designed digital notebook.",
+      date: "Mar 2023",
+      // githubUrl: "https://github.com/aaditya-paul/taskle",
+      liveUrl: "https://taskle-seven.vercel.app/",
+      img: TSK,
+      tech: ["Next.js", "Database", "Task Management"],
+      category: "fullstack",
+      // featured: true,
+    },
+    {
+      title: "Spotify Migrater",
+      description:
+        "Migrate playlists, liked songs, albums, and artists between Spotify accounts.",
+      date: "Oct 2025",
+      githubUrl: "https://github.com/aaditya-paul/spotify-migrater",
+      liveUrl: "https://spotify-migrater.vercel.app/",
+      img: SPM,
+      tech: ["Next.js", "Serverless", "Spotify API"],
+      category: "frontend",
+      // featured: true,
+    },
+    {
+      title: "Brandfolio",
+      description:
+        "Brandfolio is a revolutionary platform that bridges the gap between brands and creators with a data-first approach, empowering smarter partnerships, meaningful content, and measurable growth.",
+      date: "Jul 2025",
+      githubUrl: "https://github.com/aaditya-paul/brandfolio",
+      liveUrl: "https://brandfolio-orcin.vercel.app/",
+      img: BF,
+      tech: ["UI/UX", "Landing Page", "Animations"],
+      category: "frontend",
+      featured: false,
+    },
+
     {
       title: "Shiksha UI",
       description:
@@ -157,9 +184,9 @@ function Projects() {
           initial={false}
           whileInView={{
             clipPath: "inset(0 0 0 0)",
-            transition: {duration: 1.5, ease: "easeInOut"},
+            transition: { duration: 1.5, ease: "easeInOut" },
           }}
-          viewport={{once: true}}
+          viewport={{ once: true }}
           style={{
             textShadow: "oklch(0.75 0.183 55.934) 0.15vw 0.15vw",
             display: "inline-block",
@@ -172,26 +199,26 @@ function Projects() {
 
         {/* Category Filter Tabs */}
         <motion.div
-          initial={{y: 30, opacity: 0}}
-          whileInView={{y: 0, opacity: 1}}
-          viewport={{once: true}}
-          transition={{duration: 0.8, ease: "easeInOut"}}
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
           className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-6 sm:mb-8 px-2"
         >
           {categories.map((category, index) => (
             <motion.button
               key={category.id}
-              initial={{scale: 0}}
-              whileInView={{scale: 1}}
-              viewport={{once: true}}
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
               transition={{
                 delay: 0.1 * index,
                 type: "spring",
                 stiffness: 200,
                 damping: 20,
               }}
-              whileHover={{scale: 1.05}}
-              whileTap={{scale: 0.95}}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               onClick={() => setSelectedCategory(category.id)}
               className={`px-3 py-2 sm:px-4 sm:py-2 rounded-full font-fira-code text-xs sm:text-sm 
                          transition-all duration-300 border min-h-[40px] flex items-center justify-center ${
@@ -215,9 +242,9 @@ function Projects() {
             <motion.div
               key={project.title}
               layout
-              initial={{scale: 0, opacity: 0}}
-              animate={{scale: 1, opacity: 1}}
-              exit={{scale: 0, opacity: 0}}
+              initial={{ scale: 0, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0, opacity: 0 }}
               transition={{
                 delay: 0.1 * index,
                 type: "spring",
@@ -226,7 +253,7 @@ function Projects() {
               }}
               whileHover={{
                 scale: 1.03,
-                transition: {duration: 0.2},
+                transition: { duration: 0.2 },
               }}
               className="group bg-gray-900/30 border border-gray-700 hover:border-[#f4bb44] 
                        rounded-xl overflow-hidden transition-all duration-300 
@@ -300,8 +327,8 @@ function Projects() {
                     >
                       {project.liveUrl && (
                         <motion.button
-                          whileHover={{scale: 1.05}}
-                          whileTap={{scale: 0.95}}
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
                           onClick={(e) => {
                             e.stopPropagation();
                             window.open(project.liveUrl, "_blank");
@@ -318,8 +345,8 @@ function Projects() {
 
                       {project.githubUrl && (
                         <motion.button
-                          whileHover={{scale: 1.05}}
-                          whileTap={{scale: 0.95}}
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
                           onClick={(e) => {
                             e.stopPropagation();
                             window.open(project.githubUrl, "_blank");
@@ -367,8 +394,8 @@ function Projects() {
                   <div className="flex items-center gap-2 flex-wrap order-1 sm:order-2">
                     {project.githubUrl && (
                       <motion.button
-                        whileHover={{scale: 1.05}}
-                        whileTap={{scale: 0.95}}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
                         onClick={(e) => {
                           e.stopPropagation();
                           window.open(project.githubUrl, "_blank");
@@ -386,8 +413,8 @@ function Projects() {
 
                     {project.liveUrl && (
                       <motion.button
-                        whileHover={{scale: 1.05}}
-                        whileTap={{scale: 0.95}}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
                         onClick={(e) => {
                           e.stopPropagation();
                           window.open(project.liveUrl, "_blank");
@@ -411,23 +438,23 @@ function Projects() {
 
         {/* Stats Section */}
         <motion.div
-          initial={{y: 50, opacity: 0}}
-          whileInView={{y: 0, opacity: 1}}
-          viewport={{once: true}}
-          transition={{duration: 1, ease: "easeInOut", delay: 0.3}}
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: "easeInOut", delay: 0.3 }}
           className="mt-12 sm:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"
         >
           {[
-            {number: "7+", label: "Projects", icon: "🚀"},
-            {number: "3+", label: "Tech Stacks", icon: "💻"},
-            {number: "2+", label: "Years", icon: "⏰"},
-            {number: "100%", label: "Passion", icon: "❤️"},
+            { number: "7+", label: "Projects", icon: "🚀" },
+            { number: "3+", label: "Tech Stacks", icon: "💻" },
+            { number: "2+", label: "Years", icon: "⏰" },
+            { number: "100%", label: "Passion", icon: "❤️" },
           ].map((stat, index) => (
             <motion.div
               key={stat.label}
-              initial={{scale: 0}}
-              whileInView={{scale: 1}}
-              viewport={{once: true}}
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
               transition={{
                 delay: 0.1 * index,
                 type: "spring",
@@ -453,9 +480,9 @@ function Projects() {
 
         {/* Call to Action */}
         <motion.div
-          initial={{scale: 0, opacity: 0}}
-          whileInView={{scale: 1, opacity: 1}}
-          viewport={{once: true}}
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: true }}
           transition={{
             duration: 1,
             ease: "easeInOut",
@@ -469,7 +496,7 @@ function Projects() {
           <p className="text-lg font-fira-code text-gray-300 mb-6">
             Ready to build something amazing together?
           </p>
-          <motion.div whileHover={{scale: 1.05}} whileTap={{scale: 0.95}}>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <div
               className="inline-flex items-center gap-2 px-8 py-4 bg-[#f4bb44]/10 
                         border border-[#f4bb44] rounded-full font-fira-code 
