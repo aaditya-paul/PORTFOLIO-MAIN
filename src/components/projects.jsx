@@ -13,6 +13,8 @@ import BF from "../../public/preview/BF.jpg";
 import AM from "../../public/preview/AM.jpg";
 import SPM from "../../public/preview/spm.jpg";
 import TSK from "../../public/preview/tsk.jpg";
+import GPT from "../../public/preview/gpt.jpg";
+import WKC from "../../public/preview/wkc.jpg";
 import Image from "next/image";
 function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -50,16 +52,26 @@ function Projects() {
       featured: true,
     },
     {
-      title: "Upexperiment",
+      title: "Whiskerknots Crochet",
       description:
-        "Built a user-friendly blogging platform with seamless device adaptability, ensuring an optimal viewing experience across all screens.",
-      date: "Mar 2023",
-      githubUrl: "https://github.com/aaditya-paul/upexperiment",
-      liveUrl: "https://upexperiment.com/",
-      img: UPX,
-      tech: ["React", "Responsive Design", "Blog Platform"],
+        "A small Next.js e-commerce / brochure site for Whiskerknots — a handmade crochet shop specializing in amigurumi, wearables, and home decor. This repository is a modern rewrite using Next.js App Router, Tailwind CSS, and a server-side AI chat assistant.",
+      date: "Dec 2025",
+      githubUrl: "https://github.com/aaditya-paul/whiskerknots-crochet",
+      liveUrl: "https://whiskerknots-crochet.vercel.app/",
+      img: WKC,
+      tech: ["E-Commerce", "Landing Page", "AI Chatbot"],
       category: "fullstack",
-      featured: true,
+    },
+    {
+      title: "GPT WRAP",
+      description:
+        "Like Spotify Wrapped, but for your AI conversations. GPT Wrapped transforms your ChatGPT export data into stunning, shareable insights about your AI journey.",
+      date: "Dec 2025",
+      githubUrl: "https://github.com/aaditya-paul/gpt-wrap",
+      liveUrl: "https://gpt-wrap-psi.vercel.app/",
+      img: GPT,
+      tech: ["Data Analysis", "Mordern Design"],
+      category: "fullstack",
     },
     {
       title: "Upexperiment",
@@ -71,7 +83,6 @@ function Projects() {
       img: UPX,
       tech: ["React", "Responsive Design", "Blog Platform"],
       category: "fullstack",
-      featured: true,
     },
     {
       title: "Taskle",
