@@ -45,16 +45,13 @@ function About() {
       <div className="relative z-10 flex flex-col gap-8 md:gap-16 py-24 px-5 md:px-12 lg:px-48">
         {/* Title Section */}
         <motion.div
-          initial={false}
-          whileInView={{
-            clipPath: "inset(0 0 0 0)",
-            transition: {duration: 1.5, ease: "easeInOut"},
-          }}
-          viewport={{once: true}}
+          initial={{opacity: 0, x: -20}}
+          whileInView={{opacity: 1, x: 0}}
+          viewport={{once: true, margin: "-100px"}}
+          transition={{duration: 0.5, ease: [0.22, 1, 0.36, 1]}}
           style={{
             textShadow: "oklch(0.75 0.183 55.934) 0.15vw 0.15vw",
-            display: "inline-block",
-            clipPath: "inset(0 100% 0 0)",
+            willChange: "transform, opacity",
           }}
           className="text-3xl md:text-[48px] font-poppins font-medium underline underline-offset-8"
         >
@@ -65,17 +62,15 @@ function About() {
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
           {/* Personal Introduction */}
           <motion.div
-            initial={{scale: 0, opacity: 0}}
-            whileInView={{scale: 1, opacity: 1}}
-            viewport={{once: true}}
+            initial={{opacity: 0, y: 30}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true, margin: "-100px"}}
             transition={{
-              duration: 1.2,
-              ease: "easeInOut",
-              type: "spring",
-              stiffness: 100,
-              damping: 20,
+              duration: 0.5,
+              ease: [0.22, 1, 0.36, 1],
             }}
             className="space-y-6"
+            style={{willChange: "transform, opacity"}}
           >
             <div className="text-lg md:text-xl font-fira-code leading-relaxed">
               Hi, I&apos;m{" "}
@@ -103,15 +98,16 @@ function About() {
 
           {/* Skills Section */}
           <motion.div
-            initial={{x: 100, opacity: 0}}
-            whileInView={{x: 0, opacity: 1}}
-            viewport={{once: true}}
+            initial={{opacity: 0, y: 30}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true, margin: "-100px"}}
             transition={{
-              duration: 1,
-              ease: "easeInOut",
-              delay: 0.3,
+              duration: 0.5,
+              ease: [0.22, 1, 0.36, 1],
+              delay: 0.1,
             }}
             className="space-y-6"
+            style={{willChange: "transform, opacity"}}
           >
             <h3 className="text-xl md:text-2xl font-poppins text-[#f4bb44] mb-4">
               Tech Stack
@@ -120,18 +116,18 @@ function About() {
               {skills.map((skill, index) => (
                 <motion.div
                   key={skill}
-                  initial={{scale: 0}}
-                  whileInView={{scale: 1}}
-                  viewport={{once: true}}
+                  initial={{opacity: 0, scale: 0.8}}
+                  whileInView={{opacity: 1, scale: 1}}
+                  viewport={{once: true, margin: "-100px"}}
                   transition={{
-                    delay: 0.1 * index,
-                    type: "spring",
-                    stiffness: 200,
-                    damping: 20,
+                    delay: 0.03 * index,
+                    duration: 0.3,
+                    ease: [0.34, 1.56, 0.64, 1],
                   }}
                   className="bg-gray-900/50 border border-gray-700 hover:border-[#f4bb44] 
                            rounded-lg px-3 py-2 text-center font-fira-code text-sm 
                            transition-all duration-300 hover:bg-[#f4bb44]/10"
+                  style={{willChange: "transform, opacity"}}
                 >
                   {skill}
                 </motion.div>
@@ -142,15 +138,16 @@ function About() {
 
         {/* Highlights Section */}
         <motion.div
-          initial={{y: 50, opacity: 0}}
-          whileInView={{y: 0, opacity: 1}}
-          viewport={{once: true}}
+          initial={{opacity: 0, y: 30}}
+          whileInView={{opacity: 1, y: 0}}
+          viewport={{once: true, margin: "-100px"}}
           transition={{
-            duration: 1,
-            ease: "easeInOut",
-            delay: 0.5,
+            duration: 0.5,
+            ease: [0.22, 1, 0.36, 1],
+            delay: 0.2,
           }}
           className="mt-12"
+          style={{willChange: "transform, opacity"}}
         >
           <h3 className="text-2xl md:text-3xl font-poppins text-center mb-8 text-[#f4bb44]">
             What I Bring
@@ -159,18 +156,18 @@ function About() {
             {highlights.map((item, index) => (
               <motion.div
                 key={item.title}
-                initial={{scale: 0, opacity: 0}}
-                whileInView={{scale: 1, opacity: 1}}
-                viewport={{once: true}}
+                initial={{opacity: 0, y: 20}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{once: true, margin: "-100px"}}
                 transition={{
-                  delay: 0.2 * index,
-                  type: "spring",
-                  stiffness: 150,
-                  damping: 20,
+                  delay: 0.05 * index,
+                  duration: 0.4,
+                  ease: [0.22, 1, 0.36, 1],
                 }}
                 className="bg-gray-900/30 border border-gray-700 hover:border-[#f4bb44] 
                          rounded-xl p-6 text-center transition-all duration-300 
                          hover:bg-[#f4bb44]/5 group"
+                style={{willChange: "transform, opacity"}}
               >
                 <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
                   {item.icon}
@@ -188,18 +185,16 @@ function About() {
 
         {/* Call to Action */}
         <motion.div
-          initial={{scale: 0, opacity: 0}}
-          whileInView={{scale: 1, opacity: 1}}
-          viewport={{once: true}}
+          initial={{opacity: 0, y: 20}}
+          whileInView={{opacity: 1, y: 0}}
+          viewport={{once: true, margin: "-100px"}}
           transition={{
-            duration: 1,
-            ease: "easeInOut",
-            delay: 0.7,
-            type: "spring",
-            stiffness: 100,
-            damping: 20,
+            duration: 0.4,
+            ease: [0.22, 1, 0.36, 1],
+            delay: 0.3,
           }}
           className="text-center mt-12"
+          style={{willChange: "transform, opacity"}}
         >
           <div className="text-lg md:text-xl font-fira-code leading-relaxed text-gray-300 max-w-4xl mx-auto">
             Beyond technical skills, I thrive in collaborative environments and
@@ -214,6 +209,8 @@ function About() {
             className="mt-8"
             whileHover={{scale: 1.05}}
             whileTap={{scale: 0.95}}
+            transition={{duration: 0.15, ease: "easeInOut"}}
+            style={{willChange: "transform"}}
           >
             <div
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#f4bb44]/10 

@@ -62,6 +62,18 @@ function Projects() {
       featured: true,
     },
     {
+      title: "Upexperiment",
+      description:
+        "Built a user-friendly blogging platform with seamless device adaptability, ensuring an optimal viewing experience across all screens.",
+      date: "Mar 2023",
+      githubUrl: "https://github.com/aaditya-paul/upexperiment",
+      liveUrl: "https://upexperiment.com/",
+      img: UPX,
+      tech: ["React", "Responsive Design", "Blog Platform"],
+      category: "fullstack",
+      featured: true,
+    },
+    {
       title: "Taskle",
       description:
         "Taskle is a personal task management application designed to help you organize and prioritize your daily tasks efficiently. It features a handcrafted, warm, and creative UI that feels like a beautifully designed digital notebook.",

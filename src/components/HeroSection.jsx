@@ -24,16 +24,14 @@ function HeroSection() {
       <div className="relative z-10 w-full h-full text-white flex flex-col lg:flex-row justify-center items-center px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24 py-8 lg:py-0">
         {/* Profile Image Section */}
         <motion.div
-          initial={{scale: 0, rotate: -90}}
-          animate={{scale: 1, rotate: 0}}
+          initial={{scale: 0, opacity: 0}}
+          animate={{scale: 1, opacity: 1}}
           transition={{
-            duration: 1,
-            ease: "easeOut",
-            type: "spring",
-            stiffness: 80,
-            damping: 20,
+            duration: 0.5,
+            ease: [0.34, 1.56, 0.64, 1],
           }}
           className="relative z-20 mb-6 sm:mb-8 lg:mb-0 lg:mr-8 xl:mr-12"
+          style={{willChange: "transform, opacity"}}
         >
           {/* Optimized animated ring with reduced effects */}
           <div className="relative">
@@ -63,10 +61,11 @@ function HeroSection() {
             initial={{opacity: 0, y: 20}}
             animate={{opacity: 1, y: 0}}
             transition={{
-              delay: 0.4,
-              duration: 0.6,
-              ease: "easeOut",
+              delay: 0.2,
+              duration: 0.4,
+              ease: [0.22, 1, 0.36, 1],
             }}
+            style={{willChange: "transform, opacity"}}
           >
             <div
               style={{
@@ -83,11 +82,12 @@ function HeroSection() {
             initial={{opacity: 0, y: 20}}
             animate={{opacity: 1, y: 0}}
             transition={{
-              delay: 0.8,
-              duration: 0.6,
-              ease: "easeOut",
+              delay: 0.3,
+              duration: 0.4,
+              ease: [0.22, 1, 0.36, 1],
             }}
             className="space-y-1 sm:space-y-2"
+            style={{willChange: "transform, opacity"}}
           >
             <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-ubuntu font-light">
               I&apos;m{" "}
@@ -103,11 +103,12 @@ function HeroSection() {
             initial={{opacity: 0, y: 20}}
             animate={{opacity: 1, y: 0}}
             transition={{
-              delay: 1.2,
-              duration: 0.6,
-              ease: "easeOut",
+              delay: 0.4,
+              duration: 0.4,
+              ease: [0.22, 1, 0.36, 1],
             }}
             className="space-y-3 sm:space-y-4"
+            style={{willChange: "transform, opacity"}}
           >
             <p className="text-sm sm:text-base md:text-lg font-fira-code text-gray-400 leading-relaxed max-w-lg lg:max-w-none">
               📍 Based in West Bengal, India
@@ -124,12 +125,12 @@ function HeroSection() {
                     initial={{scale: 0, opacity: 0}}
                     animate={{scale: 1, opacity: 1}}
                     transition={{
-                      delay: 1.6 + index * 0.1,
-                      type: "spring",
-                      stiffness: 150,
-                      damping: 25,
+                      delay: 0.5 + index * 0.05,
+                      duration: 0.3,
+                      ease: [0.34, 1.56, 0.64, 1],
                     }}
                     className="px-2 sm:px-3 py-1 bg-[#f4bb44]/10 border border-[#f4bb44]/30 rounded-full text-xs sm:text-sm font-fira-code text-[#f4bb44]"
+                    style={{willChange: "transform, opacity"}}
                   >
                     {tech}
                   </motion.div>
@@ -143,15 +144,17 @@ function HeroSection() {
             initial={{opacity: 0, y: 20}}
             animate={{opacity: 1, y: 0}}
             transition={{
-              delay: 2,
-              duration: 0.6,
-              ease: "easeOut",
+              delay: 0.7,
+              duration: 0.4,
+              ease: [0.22, 1, 0.36, 1],
             }}
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 w-full sm:w-auto"
+            style={{willChange: "transform, opacity"}}
           >
             <motion.button
-              whileHover={{scale: 1.03}}
-              whileTap={{scale: 0.97}}
+              whileHover={{scale: 1.05}}
+              whileTap={{scale: 0.95}}
+              transition={{duration: 0.15, ease: "easeInOut"}}
               onClick={() => {
                 document.getElementById("projects")?.scrollIntoView({
                   behavior: "smooth",
@@ -161,13 +164,15 @@ function HeroSection() {
               className="px-4 sm:px-6 py-2 sm:py-3 bg-[#f4bb44] text-black font-fira-code font-semibold rounded-full 
                        hover:bg-[#f4bb44]/90 transition-all duration-200 
                        hover:shadow-[0_0_15px_rgba(244,187,68,0.3)] text-sm sm:text-base cursor-pointer"
+              style={{willChange: "transform"}}
             >
               View My Work 🎯
             </motion.button>
 
             <motion.button
-              whileHover={{scale: 1.03}}
-              whileTap={{scale: 0.97}}
+              whileHover={{scale: 1.05}}
+              whileTap={{scale: 0.95}}
+              transition={{duration: 0.15, ease: "easeInOut"}}
               onClick={() => {
                 document.getElementById("contact")?.scrollIntoView({
                   behavior: "smooth",
@@ -176,17 +181,20 @@ function HeroSection() {
               }}
               className="px-4 sm:px-6 py-2 sm:py-3 bg-transparent border cursor-pointer border-[#f4bb44] text-[#f4bb44] font-fira-code 
                        rounded-full hover:bg-[#f4bb44]/10 transition-all duration-200 text-sm sm:text-base"
+              style={{willChange: "transform"}}
             >
               Let&apos;s Connect 🤝
             </motion.button>
             <motion.button
-              whileHover={{scale: 1.03}}
-              whileTap={{scale: 0.97}}
+              whileHover={{scale: 1.05}}
+              whileTap={{scale: 0.95}}
+              transition={{duration: 0.15, ease: "easeInOut"}}
               onClick={() => {
                 router.push("/resume");
               }}
               className="px-4 sm:px-6 py-2 sm:py-3 bg-transparent border cursor-pointer border-[#f4bb44] text-[#f4bb44] font-fira-code 
                        rounded-full hover:bg-[#f4bb44]/10 transition-all duration-200 text-sm sm:text-base"
+              style={{willChange: "transform"}}
             >
               View Resume
             </motion.button>
@@ -199,11 +207,12 @@ function HeroSection() {
         initial={{opacity: 0, y: 15}}
         animate={{opacity: 1, y: 0}}
         transition={{
-          delay: 2.4,
-          duration: 0.6,
-          ease: "easeOut",
+          delay: 0.8,
+          duration: 0.4,
+          ease: [0.22, 1, 0.36, 1],
         }}
         className="absolute bottom-0 sm:bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center space-y-1 sm:space-y-2"
+        style={{willChange: "transform, opacity"}}
       >
         <motion.div
           animate={{y: [0, 8, 0]}}
