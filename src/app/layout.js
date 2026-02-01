@@ -134,7 +134,7 @@ export const metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code", // Add your Google Search Console verification code
+    google: "GLDJ0DIwMvyqmF-8o5146lxQ9gW3ZQ9i1", // Add your Google Search Console verification code
     // yandex: 'your-yandex-verification-code',
     // bing: 'your-bing-verification-code',
   },
