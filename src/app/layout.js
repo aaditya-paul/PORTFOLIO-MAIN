@@ -58,7 +58,7 @@ const ubuntu = Ubuntu({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://aadityapaul.com"), // Update with your actual domain
+  metadataBase: new URL("https://aaditya-paul.in"), // Update with your actual domain
   title: {
     default: "Aaditya Paul | Full-Stack Developer Portfolio",
     template: "%s | Aaditya Paul",
@@ -100,7 +100,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://aadityapaul.com",
+    url: "https://aaditya-paul.in",
     title: "Aaditya Paul | Full-Stack Developer Portfolio",
     description:
       "Portfolio of Aaditya Paul, Full-Stack Developer specializing in modern web technologies. Explore my projects, skills, and experience.",

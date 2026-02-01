@@ -14,7 +14,7 @@ export const metadata = {
       "Welcome to my portfolio. Full-Stack Developer specializing in modern web technologies.",
   },
   alternates: {
-    canonical: "https://aadityapaul.com",
+    canonical: "https://aaditya-paul.in",
   },
 };
 

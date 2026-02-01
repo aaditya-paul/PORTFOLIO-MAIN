@@ -11,7 +11,7 @@ export const metadata = {
       "View my professional resume, work experience, and technical skills.",
   },
   alternates: {
-    canonical: "https://aadityapaul.com/resume",
+    canonical: "https://aaditya-paul.in/resume",
   },
 };
 

@@ -3,7 +3,7 @@ export function generatePersonSchema() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Aaditya Paul",
-    url: "https://aadityapaul.com",
+    url: "https://aaditya-paul.in",
     jobTitle: "Full-Stack Developer",
     description:
       "Full-Stack Developer specializing in modern web technologies including React, Next.js, Node.js, and more.",
@@ -31,7 +31,7 @@ export function generateWebsiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Aaditya Paul Portfolio",
-    url: "https://aadityapaul.com",
+    url: "https://aaditya-paul.in",
     description: "Portfolio of Aaditya Paul, Full-Stack Developer",
     author: {
       "@type": "Person",
@@ -48,7 +48,7 @@ export function generateProfilePageSchema() {
       "@type": "Person",
       name: "Aaditya Paul",
       jobTitle: "Full-Stack Developer",
-      url: "https://aadityapaul.com",
+      url: "https://aaditya-paul.in",
     },
   };
 }

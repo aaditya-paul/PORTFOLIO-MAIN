@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = "https://aadityapaul.com"; // Update with your actual domain
+  const baseUrl = "https://aaditya-paul.in"; // Update with your actual domain
 
   return {
     rules: {
