@@ -5,14 +5,16 @@ import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/projects";
 
 export const metadata = {
-  title: 'Home',
-  description: 'Welcome to Aaditya Paul\'s portfolio. Full-Stack Developer specializing in modern web technologies including React, Next.js, Node.js, and more. View my projects and get in touch.',
+  title: "Home",
+  description:
+    "Welcome to Aaditya Paul's portfolio. Full-Stack Developer specializing in modern web technologies including React, Next.js, Node.js, and more. View my projects and get in touch.",
   openGraph: {
-    title: 'Aaditya Paul | Full-Stack Developer',
-    description: 'Welcome to my portfolio. Full-Stack Developer specializing in modern web technologies.',
+    title: "Aaditya Paul | Full-Stack Developer",
+    description:
+      "Welcome to my portfolio. Full-Stack Developer specializing in modern web technologies.",
   },
   alternates: {
-    canonical: 'https://aadityapaul.com',
+    canonical: "https://aadityapaul.com",
   },
 };
 

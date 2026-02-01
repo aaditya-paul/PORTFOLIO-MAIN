@@ -58,54 +58,69 @@ const ubuntu = Ubuntu({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://aadityapaul.com'), // Update with your actual domain
+  metadataBase: new URL("https://aadityapaul.com"), // Update with your actual domain
   title: {
-    default: 'Aaditya Paul | Full-Stack Developer Portfolio',
-    template: '%s | Aaditya Paul',
+    default: "Aaditya Paul | Full-Stack Developer Portfolio",
+    template: "%s | Aaditya Paul",
   },
-  description: 'Portfolio of Aaditya Paul, Full-Stack Developer specializing in modern web technologies. Explore my projects, skills, and experience in React, Next.js, Node.js, and more.',
-  keywords: ['Aaditya Paul', 'Full-Stack Developer', 'Web Developer', 'React', 'Next.js', 'Node.js', 'Portfolio', 'JavaScript', 'TypeScript', 'Frontend Developer', 'Backend Developer'],
-  authors: [{ name: 'Aaditya Paul' }],
-  creator: 'Aaditya Paul',
-  publisher: 'Aaditya Paul',
+  description:
+    "Portfolio of Aaditya Paul, Full-Stack Developer specializing in modern web technologies. Explore my projects, skills, and experience in React, Next.js, Node.js, and more.",
+  keywords: [
+    "Aaditya Paul",
+    "Full-Stack Developer",
+    "Web Developer",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Portfolio",
+    "JavaScript",
+    "TypeScript",
+    "Frontend Developer",
+    "Backend Developer",
+  ],
+  authors: [{ name: "Aaditya Paul" }],
+  creator: "Aaditya Paul",
+  publisher: "Aaditya Paul",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  manifest: '/manifest.json',
+  manifest: "/manifest.json",
   icons: {
     icon: [
-      {url: "/favicon.ico", sizes: "32x32", type: "image/x-icon"},
-      {url: "/favicon-16x16.png", sizes: "16x16", type: "image/png"},
-      {url: "/favicon-32x32.png", sizes: "32x32", type: "image/png"},
+      { url: "/favicon.ico", sizes: "32x32", type: "image/x-icon" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
     apple: [
-      {url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png"},
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
   },
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://aadityapaul.com',
-    title: 'Aaditya Paul | Full-Stack Developer Portfolio',
-    description: 'Portfolio of Aaditya Paul, Full-Stack Developer specializing in modern web technologies. Explore my projects, skills, and experience.',
-    siteName: 'Aaditya Paul Portfolio',
+    type: "website",
+    locale: "en_US",
+    url: "https://aadityapaul.com",
+    title: "Aaditya Paul | Full-Stack Developer Portfolio",
+    description:
+      "Portfolio of Aaditya Paul, Full-Stack Developer specializing in modern web technologies. Explore my projects, skills, and experience.",
+    siteName: "Aaditya Paul Portfolio",
     images: [
       {
-        url: '/preview/og-image.jpg', // Add your Open Graph image
+        url: "/preview/og-image.jpg", // Add your Open Graph image
         width: 1200,
         height: 630,
-        alt: 'Aaditya Paul - Full-Stack Developer',
+        alt: "Aaditya Paul - Full-Stack Developer",
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Aaditya Paul | Full-Stack Developer Portfolio',
-    description: 'Portfolio of Aaditya Paul, Full-Stack Developer specializing in modern web technologies.',
-    creator: '@aadityapaul', // Update with your Twitter handle
-    images: ['/preview/og-image.jpg'], // Add your Twitter card image
+    card: "summary_large_image",
+    title: "Aaditya Paul | Full-Stack Developer Portfolio",
+    description:
+      "Portfolio of Aaditya Paul, Full-Stack Developer specializing in modern web technologies.",
+    creator: "@aadityapaul", // Update with your Twitter handle
+    images: ["/preview/og-image.jpg"], // Add your Twitter card image
   },
   robots: {
     index: true,
@@ -113,13 +128,13 @@ export const metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   verification: {
-    google: 'your-google-verification-code', // Add your Google Search Console verification code
+    google: "your-google-verification-code", // Add your Google Search Console verification code
     // yandex: 'your-yandex-verification-code',
     // bing: 'your-bing-verification-code',
   },
@@ -131,7 +146,7 @@ export const metadata = {
   ],
 };
 
-export default function RootLayout({children}) {
+export default function RootLayout({ children }) {
   const personSchema = generatePersonSchema();
   const websiteSchema = generateWebsiteSchema();
 
@@ -149,7 +164,7 @@ export default function RootLayout({children}) {
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${firaCode.variable} ${poppins.variable} ${roboto.variable} ${ubuntu.variable} antialiased`}
-        style={{"--font-playwrite": "'Playwrite IN', sans-serif"}}
+        style={{ "--font-playwrite": "'Playwrite IN', sans-serif" }}
       >
         {children}
       </body>
