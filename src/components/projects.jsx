@@ -60,8 +60,9 @@ function Projects() {
       githubUrl: "https://github.com/aaditya-paul/rizzlet-web",
       liveUrl: "https://rizzlet.aaditya-paul.in/",
       img: RIZZ,
-      tech: ["AI", "NodeJs", "PostgreSQL"],
+      tech: ["AI", "NodeJs", "PostgreSQL", "AI/ML"],
       featured: true,
+      category: "ai",
     },
     {
       title: "Whiskerknots Crochet",
@@ -72,7 +73,7 @@ function Projects() {
       liveUrl: "https://whiskerknots-crochet.vercel.app/",
       img: WKC,
       tech: ["E-Commerce", "Landing Page", "AI Chatbot"],
-      category: "fullstack",
+      category: "frontend",
     },
     {
       title: "GPT WRAP",
@@ -82,8 +83,8 @@ function Projects() {
       githubUrl: "https://github.com/aaditya-paul/gpt-wrap",
       liveUrl: "https://gpt-wrap-psi.vercel.app/",
       img: GPT,
-      tech: ["Data Analysis", "Mordern Design"],
-      category: "fullstack",
+      tech: ["Data Analysis", "Mordern Design", "AI/ML"],
+      category: "ai",
     },
     {
       title: "Upexperiment",
