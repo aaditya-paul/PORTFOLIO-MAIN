@@ -15,6 +15,7 @@ import SPM from "../../public/preview/spm.jpg";
 import TSK from "../../public/preview/tsk.jpg";
 import GPT from "../../public/preview/gpt.jpg";
 import WKC from "../../public/preview/wkc.jpg";
+import RIZZ from "../../public/preview/rizz.jpeg";
 import Image from "next/image";
 function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -49,6 +50,17 @@ function Projects() {
       img: AM,
       tech: ["UI/UX", "Syllabus Parser", "AI"],
       category: "ai",
+      featured: true,
+    },
+    {
+      title: "Rizzlet",
+      description:
+        "Rizzlet is an AI-powered texting copilot that helps you find the right words, in your voice, at the right moment.",
+      date: "Feb 2026",
+      githubUrl: "https://github.com/aaditya-paul/rizzlet-web",
+      liveUrl: "https://rizzlet.aaditya-paul.in/",
+      img: RIZZ,
+      tech: ["AI", "NodeJs", "PostgreSQL"],
       featured: true,
     },
     {
