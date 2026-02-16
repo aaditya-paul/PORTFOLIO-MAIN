@@ -26,7 +26,7 @@ export default function Home() {
     <GSAPProvider>
       <div className="relative w-full min-h-screen bg-black overflow-x-hidden">
         {/* Fixed ambient background */}
-        <ParticleField />
+        {/* <ParticleField /> */}
         {/* Chapter navigation */}
         <ChapterNav />
         {/* Story chapters */}

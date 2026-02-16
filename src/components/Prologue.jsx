@@ -59,6 +59,7 @@ export default function Prologue() {
           span.style.transform = "translateY(20px)";
           taglineEl.appendChild(span);
         });
+        gsap.set(taglineEl, { opacity: 1 });
         tl.to(
           taglineEl.children,
           {
@@ -179,6 +180,7 @@ export default function Prologue() {
           <div
             ref={taglineRef}
             className="text-lg sm:text-xl md:text-3xl font-poppins font-medium text-white/90 leading-relaxed"
+            style={{ opacity: 0 }}
           >
             I build things that matter.
           </div>

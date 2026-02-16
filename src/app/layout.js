@@ -163,8 +163,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${firaCode.variable} ${poppins.variable} ${roboto.variable} ${ubuntu.variable} antialiased`}
-        style={{ "--font-playwrite": "'Playwrite IN', sans-serif" }}
+        className={`${geistSans.variable} ${geistMono.variable} ${firaCode.variable} ${poppins.variable} ${roboto.variable} ${ubuntu.variable} ${playwrite.variable} antialiased`}
       >
         {children}
       </body>
