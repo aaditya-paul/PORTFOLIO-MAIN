@@ -47,15 +47,15 @@ const channels = [
     color: "from-pink-500/20 to-purple-600/20",
     borderColor: "hover:border-pink-400/40",
   },
-  {
-    title: "Bento",
-    subtitle: "All links in one place",
-    icon: BENTO,
-    url: "https://bento.me/aaditya-paul",
-    description: "Complete link collection",
-    color: "from-orange-500/20 to-red-500/20",
-    borderColor: "hover:border-orange-400/40",
-  },
+  // {
+  //   title: "Bento",
+  //   subtitle: "All links in one place",
+  //   icon: BENTO,
+  //   url: "https://bento.me/aaditya-paul",
+  //   description: "Complete link collection",
+  //   color: "from-orange-500/20 to-red-500/20",
+  //   borderColor: "hover:border-orange-400/40",
+  // },
 ];
 
 const signalStats = [
