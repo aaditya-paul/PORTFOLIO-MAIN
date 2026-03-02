@@ -20,7 +20,7 @@ import TSK from "../../public/preview/tsk.jpg";
 import GPT from "../../public/preview/gpt.jpg";
 import WKC from "../../public/preview/wkc.jpg";
 import RIZZ from "../../public/preview/rizz.jpeg";
-
+import LW from "../../public/preview/lw.jpeg";
 const missions = [
   {
     title: "FluxBit.",
@@ -54,6 +54,17 @@ const missions = [
     img: RIZZ,
     tech: ["AI", "NodeJs", "PostgreSQL", "AI/ML"],
     featured: true,
+    category: "ai",
+  },
+  {
+    title: "LoreWeaver",
+    description:
+      "A research-grade storytelling engine designed to generate long-form narratives (20k+ words) with strong consistency, coherent character development, and maintained world rules.",
+    date: "March 2026",
+    githubUrl: "https://github.com/aaditya-paul/loreweaver",
+    // liveUrl: "https://loreweaver.aaditya-paul.in/",
+    img: LW,
+    tech: ["AI", "Python", "SQLITE", "AI/ML", "Flutter"],
     category: "ai",
   },
   {
